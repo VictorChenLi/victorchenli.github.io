@@ -19,6 +19,7 @@
 
     <!-- Bootstrap -->
     <link href="assets/plugins/bootstrap-3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Icons -->
     <link href="assets/plugins/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- typed style -->
@@ -377,7 +378,7 @@
                 <span class="chart" data-percent="82">
                   <span class="percent"></span>
                 </span>
-                <div class="text-uppercase  color-dark">MYSQL</div>
+                <div class="text-uppercase  color-dark">DevOps</div>
               </div>
             </li>
             <li class="col-sm-3 col-xs-6 no-padding">
@@ -587,100 +588,20 @@
           </div>
         </div><!--END CONTACT TITLE-->
 
-        <div class="contact-area">
-          <div class="form-contact-area clearfix">
-            <div class="inner-contact clearfix ">
-              <!--TABS CONTACT-->
-              <ul id="myTab" class="nav nav-tabs flat-nav-tabs" role="tablist">
-                <li class="active"><a href="#tab0" role="tab" data-toggle="tab">Contact Me</a></li>
-                <li><a href="#tab1" role="tab" data-toggle="tab">Hire Me</a></li>
-              </ul>
-
-              <div id="myTabContent" class="tab-content flat-tab-content">
-                <div class="tab-pane fade in active" id="tab0">
-                  <form method="post" id="contactForm" name="contactForm">
-                    <input type="hidden" name="subject" value="Message Contact Form">
-                    <div class="form-group">
-                      <label>Your Name (*)</label>
-                      <input type="text" class="form-control form-flat" name="fullname" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Email (*)</label>
-                      <input type="email" class="form-control form-flat" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Your Message (*)</label>
-                      <textarea class="form-control form-flat" name="message" rows="8" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                      <div id="captcha1"></div>
-                    </div>
-                    <div class="form-group ">
-                      <button type="submit" class="btn btn-flat-solid primary-btn" >Send Message</button>
-                    </div>
-                    <div class="form-group">
-                      <div class="preload-submit hidden"><hr/> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
-                      <div class="message-submit error hidden"></div>
-                    </div>
-                  </form>
-                </div>
-                <div class="tab-pane fade" id="tab1">
-                  <form method="post" id="hireForm" name="hireForm">
-                    <input type="hidden" name="subject" value="Message Hire Form">
-                    <input type="hidden" name="file" id="file-att" value="">
-                    <div class="form-group">
-                      <label>Your Name (*)</label>
-                      <input type="text" class="form-control form-flat" name="fullname" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Email (*)</label>
-                      <input type="email" class="form-control form-flat" name="email" required>
-                    </div>
-                    <div class="form-group">
-                      <label>Short Description About of Project (*)</label>
-                      <textarea class="form-control form-flat" name="message" rows="8" required></textarea>
-                    </div>
-
-                    <div class="form-group">
-                      <label>Attach Your Document <span class="display-block color-dark">(only .pdf  allowed , max size 200Kb)</span></label>
-                      <div class="clearfix">						
-                        <input type="button" id="upload-btn" class="btn btn-flat-solid btn-file btn-xs btn-default  clearfix" value="Choose file">
-                        <div id="errormsg" class="clearfix error"></div>	              
-                        <div id="pic-progress-wrap" class="progress-wrap"></div>	
-                        <div id="picbox" class="attbox color-dark"></div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div id="captcha2"></div>
-                    </div>
-
-                    <div class="form-group">
-                      <button type="submit" class="btn btn-flat-solid primary-btn">Send Request</button>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="preload-submit hidden"><hr/> <i class="fa fa-spinner fa-spin"></i> Please Wait ...</div>
-                      <div class="message-submit error hidden"></div>
-                    </div>
-                  </form>
-                </div>
-              </div><!--End Tabs-->
+        <!-- DOWNLOAD & PRVIEW BTN -->
+        <div class="parallax-bg bg2" >
+          <div class="container">
+            <div class="padding30 text-center">
+              <a href="mailto:shenli570@gmail.com" class="btn btn-lg btn-primary btn-flat-solid btn-pill margin-top-25"><i class="fa fa-envelope"></i>  Email Me </a>
+              <a href="https://www.freelancer.ca/u/VictorChenLi" class="btn btn-lg btn-primary btn-flat-solid btn-pill margin-top-25"><i class="fa fa-briefcase"></i>  Hire Me </a>
+              <a href="https://www.linkedin.com/in/victorchenli/" class="btn btn-lg btn-primary btn-flat-solid btn-pill margin-top-25"><i class="fa fa-linkedin"></i>  Connect with me</a>
+              <a href="https://github.com/VictorChenLi/" class="btn btn-lg btn-primary btn-flat-solid btn-pill margin-top-25"><i class="fa fa-github"></i> Help on Open Source </a>
+              <!-- <span class="space-inline-15 hidden-xs"></span>
+              <a href="#" class="btn btn-flat-line btn-default light-font"><i class="fa fa-print"></i> Print CV</a> -->
             </div>
           </div>
+        </div><!-- END DOWNLOAD & PRVIEW BTN -->
 
-          <!--MAP-->
-          <!-- <div class="map-area" id="map-contact"></div>
-          <div class="hidden map-contact-body">
-            <div class="map-content">
-              <h4 class="no-margin-top font-alt">Iam Here</h4>
-              <p><i class="fa fa-map-marker"></i> <strong>Address:</strong> 8723 Bogor, West Java</p>
-              <p><i class="fa fa-mobile"></i> <strong>Phone:</strong> 87-3898-221 </p>
-              <p><i class="fa fa-envelope"></i> <strong>Email:</strong> someone@company.com</p>
-            </div>
-          </div> -->
-          <!--END MAP-->
-        </div>
       </section><!--END CONTACT-->
 
 
@@ -708,7 +629,7 @@
             </li>
           </ul>
           <p class="text-center no-margin">
-            Solid - All Rights Reserved &COPY; 2014
+            Powered by Victor Chen
           </p>
           <a href="#home" class="back-to-top"><i class="fa fa-angle-double-up" ></i></a>
         </div>

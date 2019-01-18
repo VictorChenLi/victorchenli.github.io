@@ -41,14 +41,14 @@ body{
   width: 6rem !important;
   line-height: 6rem;
   font-size: 2rem;
-/*  border-radius: 50%;*/
+  border-radius: 50%;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 100;
   text-align: center;
 
-  -webkit-animation: pace-3d-spinner linear infinite 2s;
+/*  -webkit-animation: pace-3d-spinner linear infinite 2s;
   -moz-animation: pace-3d-spinner linear infinite 2s;
   -ms-animation: pace-3d-spinner linear infinite 2s;
   -o-animation: pace-3d-spinner linear infinite 2s;
@@ -58,7 +58,7 @@ body{
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  transform-style: preserve-3d;*/
 }
 
 .pace .pace-progress:after {

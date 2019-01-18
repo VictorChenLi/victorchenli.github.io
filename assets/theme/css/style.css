@@ -156,6 +156,9 @@ h6 {
 .margin-right-5 {
   margin-right: 5px;
 }
+.margin-top-25 {
+  margin-top: 25px;
+}
 .fix-width-100 {
   width: 100px;
   display: inline-block;
@@ -169,6 +172,9 @@ h6 {
 }
 .padding30 {
   padding: 30px;
+}
+.padding50 {
+  padding: 50px;
 }
 .white-space-10 {
   height: 10px;
