@@ -1162,6 +1162,39 @@ textArea.form-flat {
   padding: 10px;
   letter-spacing: 4px;
 }
+.move-to-next {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  display: block;
+  width: 40px;
+  height: 60px;
+  margin-left: -20px;
+  text-decoration: none;
+  outline: none;
+  line-height: 30px;
+  text-align: center;
+  /*color: #7d7d7d;*/
+  animation: arrowmove cubic-bezier(0.65, 0.05, 0.36, 1) infinite 2s; 
+  -webkit-animation: arrowmove cubic-bezier(0.65, 0.05, 0.36, 1) infinite 2s;
+}
+.move-to-next:hover,
+.move-to-next:focus {
+  color: #ffffff;
+}
+@keyframes arrowmove
+{
+  0%   {color: lightgrey; bottom: 20%}
+  50%  {color: snow;  bottom: 19%}
+  100% {color: lightgrey;  bottom: 20%}
+}
+
+@-webkit-keyframes arrowmove
+{
+  0%   {color: lightgrey; bottom: 20%}
+  50%  {color: snow;  bottom: 19%}
+  100% {color: lightgrey;  bottom: 20%}
+}
 /*============================
      06. MAIN-CONTENT
 ============================*/
