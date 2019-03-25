@@ -17,7 +17,30 @@
     // initCaptcha();
     initAjaxContactForm();
     initAjaxUploader();
+    initDestroyTimeOutPace();
   });
+
+  var initDestroyTimeOutPace = function() {
+    var counter = 0;
+
+    var refreshIntervalId = setInterval( function(){
+        var progress; 
+
+        if( typeof $( '.pace-progress' ).attr( 'data-progress-text' ) !== 'undefined' ) {
+            progress = Number( $( '.pace-progress' ).attr( 'data-progress-text' ).replace("%" ,'') );
+        }
+        // console.log(progress);
+
+        if( progress > 90 ) {
+            counter++;
+        }
+
+        if( counter > 50 ) {
+            clearInterval(refreshIntervalId);
+            Pace.stop();
+        }
+    }, 100);
+  }
 
   //Run function When PACE (page loader) hide
   Pace.on('hide', function() {
