@@ -26,16 +26,18 @@
     var refreshIntervalId = setInterval( function(){
         var progress; 
 
-        if( typeof $( '.pace-progress' ).attr( 'data-progress-text' ) !== 'undefined' ) {
-            progress = Number( $( '.pace-progress' ).attr( 'data-progress-text' ).replace("%" ,'') );
-        }
-        // console.log(progress);
+        // if( typeof $( '.pace-progress' ).attr( 'data-progress-text' ) !== 'undefined' ) {
+        //     progress = Number( $( '.pace-progress' ).attr( 'data-progress-text' ).replace("%" ,'') );
+        // }
 
-        if( progress > 90 ) {
-            counter++;
-        }
-
-        if( counter > 50 ) {
+        // if( progress > 90 ) {
+        //     counter++;
+        // }
+        // console.log(counter);
+        
+        counter ++;
+        // stop pace when loading time more than 8 seconds
+        if( counter > 30 ) {
             clearInterval(refreshIntervalId);
             Pace.stop();
         }
