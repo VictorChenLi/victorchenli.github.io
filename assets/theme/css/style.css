@@ -1091,6 +1091,10 @@ textArea.form-flat {
   height: 600px;
   position: relative;
 }
+.main-header.no-window.no-header-content{
+  height: 64px;
+  position: relative;
+}
 .main-header .header-content-fixed {
   height: 600px;
   background: url(../images/main-header.jpg) no-repeat center;
