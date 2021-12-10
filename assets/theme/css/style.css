@@ -1274,9 +1274,12 @@ textArea.form-flat {
 .my-profile .my-desc {
   float: right;
 }
+.my-profile .my-desc .inner-text.contact-me a {
+  color: #86c7ff;
+}
 .my-profile .my-desc .inner-text {
   max-width: 585px;
-  padding: 40px;
+  padding: 24px;
 }
 @media (max-width: 880px) {
   .my-profile .my-desc .inner-text {
